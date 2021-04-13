@@ -1,9 +1,11 @@
 {
   "name": "ember-tabs-component",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple ember.js tabs component",
   "keywords": [
-    "ember-addon", "tabs", "component"
+    "ember-addon",
+    "tabs",
+    "component"
   ],
   "repository": "github:ollar/ember-tabs-component",
   "license": "MIT",
@@ -73,6 +75,6 @@
   },
   "ember-addon": {
     "configPath": "tests/dummy/config",
-      "demoURL": "https://ollar.github.io/ember-tabs-component/"
+    "demoURL": "https://ollar.github.io/ember-tabs-component/"
   }
 }
