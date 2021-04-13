@@ -1,0 +1,7 @@
+<div
+    class="content {{if this.isVisible '' 'hidden'}}"
+    {{did-insert this.registerContent}}>
+    {{#if this.isVisible}}
+        {{yield}}
+    {{/if}}
+</div>

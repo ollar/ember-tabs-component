@@ -1,0 +1,7 @@
+<button
+    type="button"
+    class="title {{if this.isActive 'active'}}"
+    {{on 'click' this.activateTab}}
+    {{did-insert this.registerTitle}}>
+    {{yield}}
+</button>

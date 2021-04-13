@@ -1,0 +1,6 @@
+<div class="tabs-wrapper">
+    {{yield (hash
+            Title=(component this.tabTitle registerTitle=this.registerTitle activateTab=this.activateTab activeTabElement=this.activeTabElement)
+            Content=(component this.tabContent registerContent=this.registerContent activeContentElement=this.activeContentElement)
+        )}}
+</div>
