@@ -1,13 +1,13 @@
 {
   "name": "ember-tabs-component",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "version": "1.0.0",
+  "description": "Simple ember.js tabs component",
   "keywords": [
-    "ember-addon"
+    "ember-addon", "tabs", "component"
   ],
-  "repository": "",
+  "repository": "github:ollar/ember-tabs-component",
   "license": "MIT",
-  "author": "",
+  "author": "ollar",
   "directories": {
     "doc": "doc",
     "test": "tests"
