@@ -1,6 +1,8 @@
 ember-tabs-component
 ==============================================================================
 
+[![Lint and test](https://github.com/ollar/ember-tabs-component/actions/workflows/test_lint.js.yml/badge.svg)](https://github.com/ollar/ember-tabs-component/actions/workflows/test_lint.js.yml)
+
 Simple Ember.js tabs component (no deps, no styles).
 
 
