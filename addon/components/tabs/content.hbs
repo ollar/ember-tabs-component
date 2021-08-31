@@ -1,6 +1,6 @@
 <div
     class="content {{if this.isVisible '' 'hidden'}}"
-    {{did-insert this.registerContent}}>
+    {{did-insert this.registerContent}} ...attributes>
     {{#if this.isVisible}}
         {{yield}}
     {{/if}}

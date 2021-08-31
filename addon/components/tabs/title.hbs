@@ -2,6 +2,6 @@
     type="button"
     class="title {{if this.isActive 'active'}}"
     {{on 'click' this.activateTab}}
-    {{did-insert this.registerTitle}}>
+    {{did-insert this.registerTitle}} ...attributes>
     {{yield}}
 </button>

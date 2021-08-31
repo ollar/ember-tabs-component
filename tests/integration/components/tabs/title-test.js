@@ -8,19 +8,15 @@ module('Integration | Component | tabs/title', function(hooks) {
 
   test('it renders', async function(assert) {
     // Set any properties with this.set('myProperty', 'value');
-    // Handle any actions with this.set('myAction', function(val) { ... });
 
-    await render(hbs`<Tabs::Title />`);
+    this.set('tabsTitleText', 'test title');
 
-    assert.equal(this.element.textContent.trim(), '');
-
-    // Template block usage:
     await render(hbs`
-      <Tabs::Title>
-        template block text
-      </Tabs::Title>
+      <Tabs as |tabs|>
+      <tabs.Title>{{this.tabsTitleText}}</tabs.Title>
+      </Tabs>
     `);
 
-    assert.equal(this.element.textContent.trim(), 'template block text');
+    assert.equal(this.element.textContent.trim(), this.tabsTitleText);
   });
 });

@@ -7,20 +7,17 @@ module('Integration | Component | tabs/content', function(hooks) {
   setupRenderingTest(hooks);
 
   test('it renders', async function(assert) {
-    // Set any properties with this.set('myProperty', 'value');
-    // Handle any actions with this.set('myAction', function(val) { ... });
-
-    await render(hbs`<Tabs::Content />`);
-
-    assert.equal(this.element.textContent.trim(), '');
+    this.set('tabsContent', 'test content');
 
     // Template block usage:
     await render(hbs`
-      <Tabs::Content>
-        template block text
-      </Tabs::Content>
+      <Tabs as |tabs|>
+        <tabs.Content>
+        {{this.tabsContent}}
+        </tabs.Content>
+      </Tabs>
     `);
 
-    assert.equal(this.element.textContent.trim(), 'template block text');
+    assert.equal(this.element.textContent.trim(), this.tabsContent);
   });
 });
