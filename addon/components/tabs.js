@@ -7,9 +7,6 @@ export default class TabsComponent extends Component {
     @tracked titles = [];
     @tracked contents = [];
 
-    tabTitle = 'tabs/title';
-    tabContent = 'tabs/content';
-
     @action
     registerTitle(el) {
         this.titles = [...this.titles, el];

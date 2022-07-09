@@ -1,6 +1,6 @@
 <div class="tabs-wrapper" ...attributes>
     {{yield (hash
-            Title=(component this.tabTitle registerTitle=this.registerTitle activateTab=this.activateTab activeTabElement=this.activeTabElement)
-            Content=(component this.tabContent registerContent=this.registerContent activeContentElement=this.activeContentElement)
+            Title=(component 'tabs/title' registerTitle=this.registerTitle activateTab=this.activateTab activeTabElement=this.activeTabElement)
+            Content=(component 'tabs/content' registerContent=this.registerContent activeContentElement=this.activeContentElement)
         )}}
 </div>
